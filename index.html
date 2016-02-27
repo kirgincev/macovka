@@ -5,25 +5,26 @@
     <title>Сумка Маковка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-    <link rel="stylesheet" href="styles/layout.css" />
-    <link rel="stylesheet" href="styles/flexslider.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
-    <!-- 1. Link to jQuery (1.8 or later), -->
     <script src="js/jquery-1.12.1.min.js"></script> <!-- 33 KB -->
-
-    <!-- fotorama.css & fotorama.js. -->
     <link  href="css/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <script src="js/fotorama.js"></script> <!-- 16 KB -->
+    <script src="js/jquery.flexslider.js"></script>
 
-   </head>
+        <script type="text/javascript" charset="utf-8">
+          $(window).load(function() {
+            $('.flexslider').flexslider();
+          });
+        </script>
+
+    </head>
   <body>
 
 <header class="main-head" id="#main">
   <div class="main_menu">
     <ul style="margin-left: -50px;">
-      <li><a href="#main">Начало</a></li>
+      <li><a href="#">Начало</a></li>
       <li><a href="#video">Видео</a></li>
       <li><a href="#photo">Фото</a></li>
       <li><a href="#contacts">Контакты</a></li>
@@ -32,10 +33,17 @@
   <div class="container-fluid">
     <div class="row">
       <div>
-        <div style="z-index:-1;width: 100%; overflow:hidden;">
-          <img src="img/top_bg1.jpg" class="head_img" style="display:block;" title="сумка для iMac">
-         <img src="img/top_bg2.jpg" class="head_img" style="display:none;" title="сумка для iMac">
-         <img src="img/top_bg3.jpg" class="head_img" style="display:none;" title="сумка для iMac">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="img/top_bg1.jpg" title="сумка для iMac">
+            </li>
+            <li>
+              <img src="img/top_bg2.jpg" title="сумка для iMac">
+            </li>
+            <li>
+              <img src="img/top_bg3.jpg" title="сумка для iMac">
+            </li>
         </div>
     </div>
    </div>
