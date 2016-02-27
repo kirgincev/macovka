@@ -1,3 +1,16 @@
+body{
+  min-width: 320px;
+   position: relative;
+  font-family: "RobotoRegular", sans-serif;
+  overflow-x: hidden;
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
 .main-head{
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -6,8 +19,7 @@
 
 .head_img{
   min-width: 750px;
-  background-size: cover;
-  width: 100%;
+   width: 100%;
 }
 
 .main_menu, .h_head{
@@ -38,27 +50,29 @@
    width: 100%;
  }
 
-p{
-  font-size: 16px;
-}
 
 .main_menu {
-   margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
   padding: 12px 0px 0px;
   z-index: 5;
-   position: fixed;
-   width: 100%;
+  position: fixed;
+  width: 100%;
   background-image: url("../img/bg_menu.png");
 }
 
 .main_menu li{
-  padding: 0px 20px 0px;
+  padding: 0px 10px 0px;
 
   display: inline;
 
 }
 
+
+
  @media only screen and (max-width: 767px) {
+
+
   .h_head{
    text-align:right;
    width:90%;
@@ -67,7 +81,7 @@ p{
   width: 90%;}
 
 .head_img{
-  width: 120%;
+  min-width: 1000px;
   margin-left: -50px;
 }
 .video_content{
@@ -80,46 +94,3 @@ p{
   text-align: center;
   width: 100%;
   }
-
-  .main_menu li{
-    padding: 0px 37px 0px;
-
-    display: inline;
-
-  }
-  .main_menu{
-text-align: left;
-
-  }
-
-
-@media only screen and (max-width:480px) {
-	.h_head{
-		width:50% !important;
-	}
-
-  .main_menu li{
-    padding: 0px 11px 0px;
-    display: inline;
-
-  }
-  .main_menu{
-text-align: left;
-
-  }
-
-}
-
-@media only screen and (max-width:320px) {
-	.h_head {
-		width:100% !important;
-	}
-  .main_menu li{
-    padding: 0px 5px 0px;
-    display: inline;
-  }
-  .main_menu{
-text-align: left;
-
-  }
-}
