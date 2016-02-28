@@ -6,16 +6,37 @@ body{
 }
 
 p{
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
 }
 
-
+.logo{
+  position:fixed;
+  margin-left:5%;
+  color:red;
+  font-size:1.5em;
+}
 .main-head{
   margin: 0 auto;
   background-repeat: no-repeat;
   width: 100%;
  }
+
+.head_text h1{
+  font-size:5em;
+
+
+}
+
+.head_text{
+  position:absolute;
+  z-index:11;
+  width:90%;
+  display:block;
+  text-align:right;
+  margin-top:15%;
+
+}
 
 .head_img{
   min-width: 750px;
@@ -32,10 +53,13 @@ p{
    width: 90%;
    }
 
-
+.m_text{
+  margin: 0 auto;
+  width: 70%;
+}
 .top_text{
   width: 70%;
-  margin: 0 auto 0px;
+  margin: 0 auto;
   padding: 12px 0 0px;
   text-align: center;
   line-height: 20px;
@@ -51,10 +75,11 @@ p{
  }
 
 
+
 .main_menu {
-  text-align: center;
+  text-align: right;
   margin: 0 auto;
-  padding: 12px 0px 0px;
+  padding: 18px 0px 10px;
   z-index: 5;
   position: fixed;
   width: 100%;
@@ -63,7 +88,6 @@ p{
 
 .main_menu li{
   padding: 0px 10px 0px;
-
   display: inline;
 
 }
@@ -89,9 +113,32 @@ p{
 .slides img{
       width: 100%;
 }
+.cont_menu{
+  padding: 5px 0px 0px 0px;
+width: 87%;
+}
 
  @media only screen and (max-width: 767px) {
+   .cont_menu_li{
+     margin-left:-50px;
+   }
+   .cont_menu{
+     width:100%;
+     padding: 5px 0px 0px 0px;
+   }
+.logo{
+  display: none;
+}
+.head_text{
+  display: none;
+}
+.main_menu{
+  text-align: center;
+}
 
+.main_menu li{
+  padding: 0px 3px 0px;
+  display: inline;}
 .row{
   margin-top: -10px;
   margin-right: -20px;
@@ -109,8 +156,12 @@ p{
    text-align:right;
    width:90%;
 }
-.top_text{
-  width: 100%;
+.m_text{
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px 0 0px;
+  text-align: center;
+  line-height: 20px;
 }
 
 .head_img{
@@ -128,5 +179,6 @@ p{
   text-align: center;
   width: 100%;
   }
+
 
 }
