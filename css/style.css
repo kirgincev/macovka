@@ -133,8 +133,8 @@ a:hover{
 }
 .row{
   margin-top: -10px;
-  margin-right: -20px;
-  margin-left: -40px;
+  margin-right: 0px!important;
+  margin-left: 0px!important;
 }
 .slides img{
       width: 100%;
@@ -164,6 +164,9 @@ width: 95%;
 h1{
   font-size: 48px;
 }
+.bag_svg{
+  width: 85%;
+}
 
  @media only screen and (max-width: 767px) {
 
@@ -191,16 +194,15 @@ h1{
   padding: 0px 8px 0px;
   display: inline;}
 .row{
-  margin-top: -10px;
-  margin-right: -20px;
-  margin-left: -20px;
+
+}
+.bag_svg{
+  width: 80%;
 }
 .slides li{
-  margin-left: -20px;
-}
+ }
 .slides img{
-  margin-left: -60px;
-  width: 1000px;
+   width: 1000px;
 }
 
   .h_head{
